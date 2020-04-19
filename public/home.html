@@ -1,44 +1,60 @@
 <!DOCTYPE html>
-
-<html lange="en">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/grid.css"/>
-    <link rel="stylesheet" href="./css/styles.css"/>
-
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/flexbox.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <title>Home</title>
-</head>
+  </head>
+  <body>
+    <div class="main wrapper">
+      <header>
+        <nav>
+          <ul class="nav-list">
+            <li><a href="/">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+          </ul>
+          <div>
+            <a id="login" href="/login.html">Login</a>
+            <a id="logout" href="" onclick="doLogout(event)">Logout</a>
+          </div>
+        </nav>
+      </header>
 
-<body>
-    <div class ="main wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/home.html">Home</a></li>
-                    <li><a href="./about.html">About</a></li>
-                </ul>
-                <a href="" onclick="doLogout(event)">Logout</a>
-            </nav>
-        </header>
-
-        <div class="content">
-            <div class="center">
-                <h2>Home Page</h2>
-                <p>Welcome to your Home Page</p>
-            </div>
+      <div class="content">
+        <div id="items">
+          <ul class="items-list">
+            <li class="item-item">
+              <div class="item-item-block">
+                <span class="item-checkbox"><input type="checkbox"></span>
+                <span class="item-name">Item name</span>
+                <span class="item-model">Item Model</span>
+                <span class="item-date">date create</span>
+              </div>
+           </li>
+           </ul>
         </div>
+      </div>
 
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href="/home.html">Home</a></li>
-                    <li><a href="/about.html">About</a></li>
-                </ul>
-            </nav>
-            <p>Author: <a href="https://github.com/d-lee25">Andrew Lee</a></p>
-        </footer>
+  
+   
+
+        
+
+      <footer>
+        <p>Author: <a href="https://github.com/chan1ks">Morgan Worrell</a></p>
+      </footer>
     </div>
-</body>
+    <script src="./src/api.config.js"></script>
+    <script src="./src/simple-storage.js"></script>
+    <script src="./src/service-helpers.js"></script>
+    <script src="./src/auth.service.js"></script>
+    <script src="./src/items.service.js"></script>
+    <script src="./src/route-guard.js"></script>
+    <script src="./src/build-items-list.js"></script>
+    <script src="./src/app.js"></script>
+  </body>
 </html>

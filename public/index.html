@@ -1,76 +1,32 @@
 <!DOCTYPE html>
-<!-- creating a basic layout -->
-
-<html lange="en">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/grid.css"/>
-    <link rel="stylesheet" href="./css/styles.css"/>
-   
-    <title> Build Fluid Layout </title>
-</head>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/flexbox.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="main wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li class="nav-item"><a href="/">Home</a></li>
+            <li class="nav-item"><a href="./about.html">About</a></li>
+          </ul>
+          <a id="login" href="/login.html">Login</a>
+        </nav>
+      </header>
 
-<body>
-  
-    <div class="main">
-    
-        <header>
-            <nav>
-                <ul>
-                    
-                   
-                      <li><a href="../home.html">Home</a></li>
-                      <li><a href="../about.html">About</a></li>
-                 
-                   
-                </ul>
-            </nav>
-        </header>
+      <div class="content">
+        <h2>Welcome to a really basic app!</h2>
+      </div>
 
-
-        
-        <div class = "content">
-            <div class = "center">
-                <h2>Login</h2>
-                <form novalidate>
-                <label for="username">
-                   <span>Username</span>
-                   <input id="username" type = "text" placeholder="Username" />
-                </label>
-                <label for="password">
-                   Password:
-                   <input id="password" type="password" placeholder="Password" />
-                </label>
-                <button onclick="doLogin(event)">Submit</button>
-                <a href="./register.html">Register</a>
-               </form>
-            </div>
-        </div>
-              
-              
-            
-       
-  
-        <footer class="footer">
-            <nav>
-                <ul>
-                    <div class="item5">
-                    <li><a href="/github.com/something"> Author</a></li>
-                    <li><a href="../home.html">Home</a></li>
-                    <li><a href="../about.html">About</a></li>
-                </div>
-                </ul>
-            </nav>
-
-        </footer>
-     </div>
-   </div>
-</body>
-
-<script src="./src/auth.service.js"></script>
-<script src="./src/service-helpers.js"></script>
-<script src="./src/app.js"></script>
-
+      <footer>
+        <p>Author: <a href="https://github.com/chan1ks">Morgan Worrell</a></p>
+      </footer>
+    </div>
+  </body>
 </html>
